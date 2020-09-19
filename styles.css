@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+.bg-Image{
+    background-image: url(https://ringlogie.com/wp-content/uploads/2018/06/cute-50-modern-kitchen-geometry-accents-in-interior-design-18.jpg) ;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-bar{
+    background: rgba(15, 17, 16, 0.7);
+    display: flex;
+    padding: 20px 100px;
+    height: 65px;
+    width: 90%;
+    justify-content: space-between;
+}
+.nav-logo {
+    float: left;
+    margin: 0 50px;
+    height: 30px;
+    color: rgb(163, 105, 105);
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+   
+    
+
+}
+.nav-logo span{
+    color: red;
+    
+}
+.nav-items{
+    float: right;
+}
+
+.nav-items ul{
+    margin-left: 90px;
+    display: inline;
+    }
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+}
+.nav-items ul a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 15px;
+
+}
+.nav-items ul li::after{
+   content: '';
+   width: 0;
+   height: 2px;
+   display: block;
+   
+   margin: auto;
+   transition: .5s;
+
+}
+.nav-items a li:hover{
+    background:red;
+    border-radius: 2px;
+}
+.nav-items ul li:hover::after{
+width: 100%;
+}
+.nav-items a.active li{
+    background:red;
+    border-radius: 2px;
+}
+.title{
+    margin: 80px 130px;
+    color: rgb(83, 120, 141);
+   
+}
+.title h1{
+    font-size: 54px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    
+}
+.title h1 #sp{
+    color: red;
+    font-size: 84px;
+}
+
+ /*about us*/
+ .about, .services, .contact, .sample{
+    padding: 5% 10%;
+    text-align: center;
+
+}
+h1.tit{
+    margin-bottom: 20px;
+    color: #444444;
+    font-family: "Bad Script" sans-serif;
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 5px;
+    word-spacing: 25px;
+    font-weight: bold;
+
+}
+
+/*services*/
+.services{
+    background: #f5f5f5;
+
+}
+.diff-services{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+
+}
+.diff-service-item{
+    width: 30%;
+
+}
+
+
+.diff-service-item h3{
+    color: #fb2274;
+    margin-bottom: 15px;
+}
+/*contact us*/
+.form-input{
+    margin-bottom: 15px;
+}
+
+.form-input input[type="text"]{
+    width: 250px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+}
+.form-input textarea{
+    width: 250px;
+    padding: 12px 20px;
+    height: 80px;
+    resize: none;
+    border: 1px solid #ccc;
+}
+.btn{
+
+}
+/*sample*/
+.smp{
+    background: #f5f5f5;
+
+}
+.smples{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+   
+}
+.sample-items{
+    width: 30%;
+} 
+.smples .sample-items img{
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+.sample p{
+    font-weight: bold;
+    font-size: 30px;
+}
+.smples .sample-items{
+    cursor: pointer;
+}
+.smples .sample-items:hover img{
+    transform: scale(1.2);
+}
+/*footer*/
+.footer{
+    width: 100%;
+    text-align: center;
+    background: #444444;
+    padding: 20px 0;
+}
+.footer a{
+    color: #ccc;
+    text-decoration: none;
+}
+/*arrow*/
+.arrow{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 60%;
+    line height: 50px;
+
+}
+.arrow img{
+    width: 20px;
+    height: 20px;
+}
+
+.nav-bar .fa{
+    display: none;
+}
+@media (max-width: 700px){
+    .verti-bar{
+        display: none;
+    }
+    .title{
+        margin: 80px 40px;
+
+
+    }
+    .title h1{
+        font-size: 40px;
+
+        }
+        .title h1 #sp{
+            font-size: 64px;
+        }
+        .nav-bar{
+            padding: 10px 30px; 
+        }
+        .fa-bars{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .nav-bar .fa{
+            display: block;
+            color: #fff;
+            margin: 10px 25px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .nav-items{
+            height: 100vh;
+            width: 200px;
+            background: #000;
+            top: 0;
+            right: -200px;
+            position: absolute;
+            text-align: left;
+            transition: 0.5s;
+
+        }
+        .nav-items ul a{
+            display: block;
+        }
+    }
