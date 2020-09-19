@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My website</title>
+</head>
+
+<body>
+
+    <div class="hero" id="Home">
+
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <span>D</span>reamIt
+
+            </div>
+            <div class="nav-items" id="nav-items">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="#" class="active">
+                        <li>Home</li>
+                    </a>
+                    <a href="#about">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#services">
+                        <li>Services</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact us</li>
+                    </a>
+                    <a href="#sample">
+                        <li>Sample</li>
+                    </a>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="bg-Image">
+            <div class="title">
+                <h1> <span id="sp">DREAM BIG!</span><br> We turn your dream home into reality</h1>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h1 class="tit">About us</h1>
+            <p>DreamIt is an online platform which helps you to turn your dream home into reality, we hepl you to
+                decorate your living room, bedroom, bathroom,yards.
+                we mainly deal with home designing because this idea was inspired by the love and passion of living
+                in good looking and modern home i decided why not share my
+                passion with the world to make the world a better place.
+                Apart from design we also have some other services which you will know in our services sections.
+            </p>
+        </div>
+        <div class="services" id="services">
+            <h1 class="tit">Our services</h1>
+            <p>We offer any services related to proving you with your ideal home.Here are some services</p>
+            <div class="diff-services">
+
+                <div class="diff-service-item">
+                    <img src="https://i.pinimg.com/474x/af/78/15/af78150aa7b897fe1f764eaa8cd30061.jpg"
+                        alt="service-Image" height="250px">
+                    <h3>Home renovations</h3>
+                    <p>We transform your old house into a new modern home!!</p>
+
+                </div>
+                <div class="diff-service-item">
+                    <img src="https://www.singaporecarpetcleaning.com/wp-content/uploads/2019/08/what-you-require-to-know-about-professional-carpet-cleaning.jpg"
+                        alt="service-Image" height="250px">
+                    <h3>Carpet cleaning</h3>
+                    <p>We also offer carpet cleaning service, we bring your carpet back to life.</p>
+                </div>
+                <div class="diff-service-item">
+                    <img src="https://global2019-static-cdn.kikuu.com/upload-productImg-1540263497133_320_234.jpeg?"
+                        alt="service-Image" height="250px">
+                    <h3>we sell custom decoration items</h3>
+                    <p>We sell custom masterpieces to decorate your home at an offodable price.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact" id="contact">
+            <h1 class="tit">Contact Us</h1>
+            <div class="cont-form">
+                <div class="form-input">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder="subject">
+                </div>
+                <div class="form-input">
+                    <textarea placeholder="message"></textarea>
+                </div>
+                <div class="btn">
+                    <a href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+        <div class="sample" id="sample">
+            <h1 class="tit">Sample</h1>
+            <p>These are some of the homes we worked on.</p>
+            <div class="smp">
+                <div class="smples">
+                    <div class="sample-items">
+                        <img src="https://i.ytimg.com/vi/crTc3VlzVSE/maxresdefault.jpg" alt="first-sample"
+                            width="400px">
+                    </div>
+                    <div class="sample-items">
+                        <img src="https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/SOPR19003.jpg"
+                            alt="second-sample" width="400px">
+                    </div>
+                    <div class="sample-items">
+                        <img src="https://i.ytimg.com/vi/jeFphPc30MM/maxresdefault.jpg" alt="third-sample"
+                            width="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">@ 2020 DreamIt</a>
+        </div>
+        <div class="arrow">
+            <a href="#Home"><img src="https://toppng.com/uploads/preview/arrow-up-black-up-arrow-115632617737cvxxumden.png" alt="up-arrow"></a>
+        </div>
+    </div>
+
+    <script>
+        var show = document.getElementById("nav-items");
+        function showMenu() {
+            show.style.right = "0";
+        }
+        function closeMenu() {
+            show.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
